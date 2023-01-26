@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-rpn-api-service
+  namespace: default
+spec:
+  selector:
+    app: flask-rpn-api
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-rpn-api-depoly
+  namespace: default
+  labels:
+    app: flask-rpn-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-rpn-api
+  template:
+    metadata:
+      labels:
+        app: flask-rpn-api
+    spec:
+      imagePullSecrets:
+      - name: pipeline-docker-registry
+      containers:
+      - name: flask-rpn-api
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        ports:
+        - containerPort: 5001
