@@ -98,13 +98,13 @@ Stack-related functions
 
  Go to this url http://localhost:5001
 
- <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/1.png”>
+ <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/1.png”/>
 
  So let's start test it 
 
  1 ===>> For the fist time we got  "The stack is empty." it is normal because we do not add anything 
 
-  <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/2.png”>
+  <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/2.png”/>
 
   so we are going to push somes number
  2 ====>>
@@ -115,20 +115,20 @@ Stack-related functions
    "total": "10"
   }
 
- <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/3.png”>
+ <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/3.png”/>
 
  If we try again to read the stack we must see :
 
  "[10.0, 20.0]"
 
- <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/4.png”>
+ <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/4.png”/>
 
  Time to clean stack
   3 ====>>
 
   We have this 
 
-   <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/5.png”>
+   <img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/5.png”/>
 
    If we try to read the stack again we will see  "The stack is empty."
 
@@ -163,13 +163,13 @@ input :
 {
   "total": "3 7 5 + *"
 }
-<img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/6.png”>
+<img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/6.png”/>
 result :
 
 {
   "total": "36.0"
 }
-<img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/7.png”>
+<img src=“https://github.com/lesilencieux/flask-restplus-rpn-api/blob/main/assets/7.png”/>
 
 
 
